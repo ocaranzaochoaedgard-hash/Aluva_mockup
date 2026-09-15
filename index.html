@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALUVA | Ropa y Elementos de Protección Personal</title>
+
+    <!-- Archivos CSS obligatorios del Template Assan (Se mantienen intactos) -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Estilos de personalización del Box Model y Variables de ALUVA -->
+    <style>
+        :root {
+            --azul-industrial: #002b7a;
+            --naranja-seguridad: #f47c20;
+            --amarillo-alta-visibilidad: #f4c430;
+            --gris-fondo: #f4f5f7;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fuerza a que las imágenes de los productos mantengan una proporción idéntica */
+        .card-img-container {
+            height: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--gris-fondo);
+            overflow: hidden;
+        }
+
+            .card-img-container img {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                transition: transform 0.3s ease;
+            }
+
+        .product-card:hover .card-img-container img {
+            transform: translateY(-5px);
+        }
+
+        /* Estilo personalizado para el borde naranja decorativo en Misión/Visión */
+        .border-left-decor {
+            border-left: 5px solid var(--naranja-seguridad);
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===================================================================
+         ENCABEZADO Y NAVEGACIÓN (Migrado al Navbar responsivo de Assan)
+         =================================================================== -->
+    <header class="header-main navbar-transparent">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+            <div class="container">
+                <!-- Logotipo de la Empresa -->
+                <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                    <img src="img/logo-aluva.jpeg" alt="Logo ALUVA" height="50" class="mr-2">
+                    <span class="font-weight-bold text-dark" style="letter-spacing: 1px;">ALUVA</span>
+                </a>
+
+                <!-- Botón hamburguesa táctil para celulares -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAluva" aria-controls="navbarAluva" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </
+                </button>
+
+                <!-- Menú Adaptable (Media Queries integradas de Assan/Bootstrap) -->
+                <div class="collapse navbar-collapse" id="navbarAluva">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link text-uppercase small font-weight-bold" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase small font-weight-bold" href="#nosotros">Quiénes somos</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase small font-weight-bold" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase small font-weight-bold" href="#personalizacion">Personalización</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase small font-weight-bold" href="#testimonios">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase small font-weight-bold" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 1. SECCIÓN INICIO -->
+        <section id="inicio">
+            <h2>Ropa de trabajo, EPP y vestuario personalizado</h2>
+            <p>Listos para la faena y la vida diaria.</p>
+            <p>Calidad, innovación en textiles y la resistencia que tu equipo necesita.</p>
+            <img src="img/faena-1.jpeg" alt="Trabajador utilizando vestuario ALUVA en faena">
+        </section>
+
+        <!-- 2. SECCIÓN QUIÉNES SOMOS -->
+        <section id="nosotros">
+            <h2>Quiénes somos</h2>
+            <p>En ALUVA nos especializamos en el diseño, confección y distribución de ropa de trabajo, vestuario corporativo y Equipos de Protección Personal (EPP). Nacimos para responder a las exigencias reales del sector faenero e industrial, combinando durabilidad, seguridad, comodidad y personalización.</p>
+
+            <h3>Misión</h3>
+            <p>Proveer vestuario técnico, EPP y prendas corporativas de alta durabilidad y funcionalidad, diseñadas para resistir las condiciones más exigentes del trabajo faenero y la vida diaria, integrando personalización de marca y tecnología textil en cada producto.</p>
+
+            <h3>Visión</h3>
+            <p>Ser el referente y aliado estratégico clave en la confección y suministro de ropa industrial, EPP y vestuario personalizado, destacados por la innovación constante en materiales, el diseño a medida y el compromiso con la seguridad y bienestar de nuestros usuarios.</p>
+        </section>
+
+        <!-- 3. SECCIÓN PRODUCTOS DESTACADOS (SISTEMA CSS GRID) -->
+        <section id="productos">
+            <h2>Productos destacados</h2>
+
+            <!-- Producto 1 -->
+            <article>
+                <h3>Camisa Ripstop Jubae</h3>
+                <img src="img/camisa-jubae.jpeg" alt="Camisa Ripstop Jubae">
+                <p>Vestuario técnico para uso laboral y faena.</p>
+            </article>
+
+            <!-- Producto 2 -->
+            <article>
+                <h3>Chaqueta Softshell</h3>
+                <img src="img/chaqueta-softshell.jpeg" alt="Chaqueta Softshell">
+                <p>Prenda resistente para condiciones de trabajo exigentes.</p>
+            </article>
+
+            <!-- Producto 3 -->
+            <article>
+                <h3>Pantalón Ripstop</h3>
+                <img src="img/pantalon-ripstop.jpeg" alt="Pantalón Ripstop">
+                <p>Pantalón técnico pensado para comodidad y resistencia.</p>
+            </article>
+
+            <!-- Producto 4 -->
+            <article>
+                <h3>Chaleco geólogo amarillo</h3>
+                <img src="img/chaleco-amarillo.jpeg" alt="Chaleco geólogo amarillo">
+                <p>Equipamiento de alta visibilidad para terreno.</p>
+            </article>
+
+            <!-- Producto 5 -->
+            <article>
+                <h3>Chaleco geólogo naranjo</h3>
+                <img src="img/chaleco-naranjo.jpeg" alt="Chaleco geólogo naranjo">
+                <p>Chaleco técnico con cintas reflectantes normadas.</p>
+            </article>
+
+            <!-- Producto 6 -->
+            <article>
+                <h3>Bandana negra</h3>
+                <img src="img/bandana-negra.jpeg" alt="Bandana negra">
+                <p>Accesorio complementario de protección contra el polvo.</p>
+            </article>
+
+            <!-- Producto 7 -->
+            <article>
+                <h3>Gorro reflectante</h3>
+                <img src="img/gorro-negro.jpeg" alt="Gorro negro reflectante">
+                <p>Protección solar superior con bandas de seguridad.</p>
+            </article>
+
+            <!-- Producto 8 -->
+            <article>
+                <h3>Polera técnica</h3>
+                <img src="img/polera-negra.jpeg" alt="Polera negra">
+                <p>Prenda respirable ideal para largas jornadas laborales.</p>
+            </article>
+
+            <!-- Producto 9 -->
+            <article>
+                <h3>Polerón gris</h3>
+                <img src="img/poleron-gris.jpeg" alt="Polerón gris">
+                <p>Abrigo corporativo de alta resistencia térmica.</p>
+            </article>
+        </section>
+
+        <!-- 4. SECCIÓN PERSONALIZACIÓN (ALTO CONTRASTE) -->
+        <section id="personalizacion">
+            <h2>Personalización</h2>
+            <p>Diseñamos y personalizamos prendas con la identidad de tu empresa o según tus gustos personales.</p>
+            <p>
+                <!-- Enlace dinámico con número ficticio chileno + mensaje preconfigurado -->
+                <a href="https://wa.me/56936610671"
+                   target="_blank"
+                   style="color: var(--amarillo-seguridad); text-decoration: underline; font-weight: bold;">
+                    Diseña o personaliza tu prenda por WhatsApp.
+                </a>
+            </p>
+        </section>
+
+        <!-- 5. SECCIÓN TESTIMONIOS (MANEJO DE BLOCKQUOTE) -->
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+
+            <blockquote>
+                “Equipar a nuestra cuadrilla con ALUVA ha sido un gran acierto. La calidad de las parkas y chaquetas resiste perfecto las condiciones de la faena, y la personalización del logo de la empresa quedó impecable.”
+                <br><br>
+                <strong>Ignacio S. – Encargado de Operaciones y Prevención</strong>
+            </blockquote>
+
+            <blockquote>
+                “Mandé a personalizar unas prendas para mi trabajo de terreno y la atención fue increíble. Excelente confección, la ropa es muy cómoda y los detalles se notan de inmediato. 100% recomendados.”
+                <br><br>
+                <strong>Cristian M. – Supervisor de Operaciones</strong>
+            </blockquote>
+
+            <img src="img/faena-2.jpeg" alt="Cliente utilizando vestuario ALUVA en faena">
+        </section>
+
+        <!-- 6. SECCIÓN CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p><strong>Dirección:</strong> Tornamesa 42, Los Andes.</p>
+            <p><strong>Correo:</strong> <a href="mailto:aluva.seguridad@gmail.com">aluva.seguridad@gmail.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank">@aluva.outdoor</a></p>
+            <p><strong>TikTok:</strong> <a href="https://tiktok.com" target="_blank">@aluva.outdoor</a></p>
+        </section>
+
+    </main>
+
+    <!-- 7. PIE DE PÁGINA (FOOTER) -->
+    <footer>
+        <p>© 2026 ALUVA - Ropa y elementos de protección personal</p>
+    </footer>
